@@ -1,0 +1,41 @@
+@import "./variables";
+
+@mixin nav-a{
+    text-decoration: none;
+    color: $text-colour2;
+    font-family: $myfont;
+    transition: 0.3s;
+    &:hover{
+        color: $text-colour2-hover;
+    }
+}
+
+@mixin dflex-sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn-intro($btn-bg-colour1, $btn-hover-colour1,$text-hover-colour1){
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    color: $text-colour1;
+    background-color: $btn-bg-colour1;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: $myfont;
+    @include btn-center;
+
+    &:hover{
+        background-color: $btn-hover-colour1;
+        color: $text-hover-colour1;
+    }
+}

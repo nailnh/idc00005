@@ -1,1 +1,133 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  background-color: rgb(33, 37, 41);
+}
+
+.container {
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left h1 {
+  color: white;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: 0.3s;
+}
+.nav-right a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-right i {
+  font-size: 10px;
+}
+
+.intro-left {
+  width: 80%;
+}
+
+.intro-left .intro-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.intro-left .intro-buttons a:first-child {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  color: white;
+  background-color: #0d6efd;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-left .intro-buttons a:first-child:hover {
+  background-color: #0b5ed7;
+  color: white;
+}
+
+.intro-left .intro-buttons a:last-child {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.intro-left .intro-buttons a:last-child:hover {
+  background-color: white;
+  color: black;
+}
+
+.intro-text {
+  padding-right: 50px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: white;
+  width: 100%;
+}
+
+.intro-text:first-child {
+  font-size: 2rem;
+}
+
+.intro-text p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+#intro {
+  background-color: rgb(33, 37, 41);
+  height: 450px;
+}
+
+.intro-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.intro-right {
+  width: 50%;
+}
+
+.intro-right img {
+  width: 100%;
+  border-radius: 8px;
+}/*# sourceMappingURL=style.css.map */

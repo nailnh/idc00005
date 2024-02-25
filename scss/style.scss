@@ -1,0 +1,96 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+@import "./_sass-utils/variables";
+@import "../scss/_sass-utils/mixins";
+
+header{
+    height: 60px;
+    background-color: $nav-bg-colour;
+}
+
+.container{
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+nav{
+    height: 100%;
+    @include dflex-sb
+}
+
+.nav-left h1{
+    color: $text-colour1;
+    font-family: $myfont;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.nav-right{
+    display: flex;
+    gap: 15px
+}
+
+.nav-right a{
+    @include nav-a;
+}
+
+.nav-right i{
+    font-size: 10px;
+}
+
+.intro-left{
+    width: 80%;
+}
+
+.intro-left .intro-buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.intro-left .intro-buttons a:first-child{
+    @include btn-intro($btn-bg-colour1, $btn-hover-colour1,$text-hover-colour1);
+}
+
+.intro-left .intro-buttons a:last-child{
+    @include btn-intro($btn-bg-colour2, $btn-hover-colour2,$text-hover-colour2);
+    border: 1px solid white;
+}
+
+.intro-text{
+    padding-right: 50px;
+    font-family: $myfont;
+    color: white;
+    width: 100%;
+}
+
+.intro-text:first-child{
+    font-size: 2rem;
+}
+
+.intro-text p{
+    font-size: 1.25rem;
+    color: $text-colour2;
+}
+
+#intro{
+    background-color: $nav-bg-colour;
+    height: 450px;
+}
+
+.intro-div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.intro-right{
+    width: 50%;
+}
+
+.intro-right img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
